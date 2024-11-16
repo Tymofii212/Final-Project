@@ -61,13 +61,3 @@ for employee in employees:
     print("\nІнформація про працівника:")
     employee.print_employee_card()
     employee.salary_paycheck()
-
-
-
-try:
-    employee3 = Sigmector("Olegiv", "Mychailo", "54", 1, "BO4184821CI")
-    employee3.print_employee_info()
-    employee3.show_licence()
-    employee3.to_receive_a_salary()
-except TypeError as error:
-    logging.exception("Сталася помилка: %s", error)
